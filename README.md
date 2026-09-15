@@ -53,6 +53,8 @@ A simple command-line authentication system built with **Go**, **MySQL**, and **
 
 Install **Docker Desktop** on the machine and make sure it is running.
 
+open docker desktop
+
 ## Step 2: Get the Source Code
 
 Clone or download the project source code.
@@ -68,7 +70,7 @@ cd cli-login-system
 
 ## Step 3: Add the `.env` File
 
-The actual `.env` file is provided **present in source code repo directly**.
+The actual `.env` file is provided **send saperately in email**.
 
 Copy the `.env` file into the root of the project.
 
@@ -85,17 +87,13 @@ cli-login-system/
 └── ...
 ```
 
-### Important
-
-The `.env` file contains environment-specific configuration and should **not be committed to GitHub/GitLab**.
-
-The repository contains `.env.example` as a reference.
-
----
-
 ## Step 4: Start the Application
 
 Open a terminal inside the project folder and run:
+
+```bash
+docker compose build app
+```
 
 ```bash
 docker compose run --rm --interactive app
